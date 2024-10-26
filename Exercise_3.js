@@ -42,7 +42,6 @@ class LinkedList {
     // Go to next node
     let currentNode = this.head;
     while (currentNode != null) {
-      console.log(currentNode.data);
       currentNode = currentNode.next;
     }
   }
