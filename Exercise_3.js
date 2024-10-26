@@ -70,3 +70,11 @@ list.insert(3);
 list.insert(4);
 // Print the LinkedList
 list.printList();
+
+test("Scenario #1:", () => {
+  let obj = new LinkedList();
+  obj.insert(10);
+  obj.insert(20);
+  obj.insert(30);
+  expect(obj.printList()).toBeUndefined();
+});

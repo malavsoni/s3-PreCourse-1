@@ -37,14 +37,17 @@ class Stack {
   peek() {
     //Write your code here
     if (this.isEmpty()) {
-      return 0;
+      return -1;
     }
     this.a[this.top];
   }
 }
 
-let s = new Stack();
-s.push(10);
-s.push(20);
-s.push(30);
-console.log(s.pop() + " Popped from stack");
+test("Scenario #1:", () => {
+  let obj = new Stack();
+  obj.push(10);
+  obj.push(20);
+  obj.push(30);
+
+  expect(obj.pop()).toStrictEqual(30);
+});

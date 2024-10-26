@@ -50,10 +50,11 @@ class StackAsLinkedList {
   }
 }
 
-//Driver code
-const sll = new StackAsLinkedList();
-sll.push(10);
-sll.push(20);
-sll.push(30);
-console.log(sll.pop() + " popped from stack");
-console.log("Top element is " + sll.peek());
+test("Scenario #1:", () => {
+  let obj = new StackAsLinkedList();
+  obj.push(10);
+  obj.push(20);
+  obj.push(30);
+  expect(obj.peek()).toStrictEqual(30);
+  expect(obj.pop()).toStrictEqual(20);
+});
