@@ -9,7 +9,7 @@ class Stack {
   constructor() {
     //Initialize your constructor
     this.MAX = 10;
-    this.top = -1;
+    this.top = -1; // Index of top element
     this.a = new Array(this.MAX);
   }
 
